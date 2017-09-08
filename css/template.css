@@ -1,0 +1,549 @@
+body{
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	min-width:1400px;
+	margin: 0px;
+	padding:0 0 80px 0;
+	border-bottom: 40px solid black;
+}
+
+.name {
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.navWrap {
+	min-width: 1400px;
+	height: 80px;
+	background: rgba(255,255,255,0.8);
+}
+
+.nav {
+	padding-top: 22px;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.Grid {
+	padding-top: 140px;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-right: 80px;
+	font-size: 0.1000px;
+}
+
+.inGrid {
+	display: inline-block;
+	margin-bottom: 60px;
+}
+
+.Grid:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.left_align {
+	text-align: left;
+}
+
+.right {
+	float: right;
+}
+
+.right_align {
+	text-align: right;
+}
+
+.shadow {
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.full {
+	min-width: 1400px;
+	width: 100%;
+}
+
+.eighty {
+	width: 79%;
+}
+
+.sixty {
+	width: 59%;
+}
+
+.half {
+	width: 49%;
+}
+
+.forty {
+	width: 35%;
+	padding-left: 4%;
+}
+
+.thirty {
+	width: 30%;
+}
+
+.twenty {
+	width: 19%;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.center {
+	text-align: center;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.header_item {
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 10px;
+	min-width: 330px;
+}
+
+.login_item {
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.forms {
+	padding-top: 200px;
+	margin-bottom: 100px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.seperator {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1%;
+	height: 70%;
+	min-height: 600px;
+	border-right: 1px solid #ddd;
+}
+
+input[type=text], input[type=password] {
+	font-size: 12px;
+	outline: none;
+	border: 1px solid #444;
+	width: 50%;
+	padding: 8px;
+}
+
+textarea {
+	font-size: 12px;
+	outline: none;
+	border: 1px solid #444;
+	width: 50%;
+	padding: 8px;
+	resize: none;
+	margin-bottom: 10px;
+}
+
+input[type=submit]{
+	outline: none;
+	margin: 10px 0 10px 0;
+	border: none;
+	color: white;
+	padding: 8px 50px 8px 50px;
+	display: inline-block;
+	-webkit-border-radius: 0px;
+	background: #000;
+	cursor: pointer;
+}
+
+form p {
+	display: inline-block;
+	font-size: 12px;
+	color: red;
+
+	animation-name: bounce;
+    animation-iteration-count: once;
+    animation-timing-function: ease;
+    animation-delay: 0.3s;
+    animation-duration: 0.45s;
+
+	-webkit-animation-name: bounce;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+    -webkit-animation-duration: 0.45s;
+}
+
+.button {
+	font-size: 12px;
+	text-decoration: none;
+	outline: none;
+	margin: 10px 0 10px 0;
+	border: none;
+	color: white;
+	padding: 8px 50px 8px 50px;
+	display: inline-block;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	background: #000;
+	cursor: pointer;
+}
+
+.drop {
+	animation-name: drop;
+    animation-iteration-count: once;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;
+
+	-webkit-animation-name: drop;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 0.4s;
+}
+
+@-webkit-keyframes drop {
+    0% {
+    	-webkit-transform: translateY(-90px);
+        opacity: 0%;
+    }
+
+    15% {
+    	opacity: 100%;
+    }
+
+    40% {
+        -webkit-transform: translateY(10px);
+        opacity: 100%;
+    }
+
+    60% {
+        -webkit-transform: translateY(-30px);
+        opacity: 100%;
+    }
+
+    85% {
+        -webkit-transform: translateY(0px);
+        opacity: 100%;
+    }
+
+    90% {
+        -webkit-transform: translateY(-8px);
+        opacity: 100%;
+    }
+
+    100% {
+    	-webkit-transform: translateY(0);
+    	opacity: 100%;
+    }
+}
+
+.fade {
+	animation-name: fade;
+    animation-iteration-count: once;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;
+
+	-webkit-animation-name: fade;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fade {
+    0%, 30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade {
+    0%, 30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.bounce {
+	animation-name: bounce;
+    animation-iteration-count: once;
+    animation-timing-function: ease-in-out;
+
+    animation-duration: 0.6s;
+
+	-webkit-animation-name: bounce;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in-out;
+
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+    	-webkit-transform: translateX(-15px);
+        opacity: 0;
+    }
+
+    30%, 60%, 90% {
+        -webkit-transform: translateX(-15px);
+        opacity: 100%;
+    }
+    15%, 45%, 75% {
+        -webkit-transform: translateX(15px);
+        opacity: 100%;
+    }
+
+    100% {
+    	-webkit-transform: translateX(0);
+    	opacity: 100%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+    	-webkit-transform: translateX(-15px);
+        opacity: 0;
+    }
+
+    30%, 60%, 90% {
+        -webkit-transform: translateX(-15px);
+        opacity: 100%;
+    }
+    15%, 45%, 75% {
+        -webkit-transform: translateX(15px);
+        opacity: 100%;
+    }
+
+    100% {
+    	-webkit-transform: translateX(0);
+    	opacity: 100%;
+    }
+}
+
+.slideIn {
+	animation-name: slideIn;
+    animation-iteration-count: once;
+    animation-timing-function: ease-out;
+    animation-duration: 0.3s;
+
+	-webkit-animation-name: slideIn;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.3s;
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        -webkit-transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.dropHeader {
+	animation-name: dropHeader;
+    animation-iteration-count: once;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;
+
+	-webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 0.4s;
+}
+
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+.delay {
+	animation-delay: 0.8s;
+
+	-webkit-animation-delay: 0.8s;
+}
+
+.space {
+	width: 30px;
+}
+
+.anchor a {
+	font-size: 12px;
+	color: grey;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.title_small {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.thin {
+	font-weight: normal;
+}
+
+.normal {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.big {
+	margin-top: 100px;
+	font-size: 60px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.board {
+	width: 720px;
+	height: 720px;
+}
+
+.column {
+	width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.square {
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+}
+
+.slot {
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	transition: all 0.5s ease-in-out;
+}
+
+.clickable {
+	border-radius: 80px;
+	box-shadow: inset 0px 0px 0px 1px #ccc;
+
+	-webkit-border-radius: 80px;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #ccc;
+}
+
+.clickable:hover {
+	animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.6s;
+
+	-webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes blink {
+	0%, 100% {
+		-webkit-box-shadow: inset 0px 0px 0px 2px #000000;
+		opacity: 0;
+	}
+
+	50% {
+		-webkit-box-shadow: inset 0px 0px 0px 10px #000000;
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	0%, 100% {
+		-webkit-box-shadow: inset 0px 0px 0px 2px #000000;
+		opacity: 0;
+	}
+
+	50% {
+		-webkit-box-shadow: inset 0px 0px 0px 10px #000000;
+		opacity: 1;
+	}
+}
+
+.top {
+	vertical-align: top;
+}
+
+.border-left {
+	border-left: 1px solid #ccc;
+}
+
+.border-right {
+	border-right: 1px solid #ccc;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
